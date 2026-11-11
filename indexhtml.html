@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VEXORA | Think Beyond</title>
+
+<meta name="description" content="VEXORA is a technology and creative brand exploring digital innovation, web development and design.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050b18;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #081326;
+    border-bottom: 1px solid #142b49;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #39aaff;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #39aaff;
+    transform: rotate(45deg);
+    color: white;
+    box-shadow: 0 0 15px #168cff70;
+}
+
+.logo-icon span {
+    transform: rotate(-45deg);
+    font-size: 21px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #d5e5fa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #39aaff;
+}
+
+.hero {
+    min-height: 590px;
+    padding: 120px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+      radial-gradient(ellipse at 75% 35%, #123c72 0%, transparent 45%),
+      linear-gradient(135deg, #071326, #030812);
+}
+
+.hero-tag {
+    color: #39aaff;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 85px);
+    letter-spacing: 5px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #36aaff;
+}
+
+.hero p {
+    max-width: 550px;
+    color: #b8cbe2;
+    margin: 22px 0 30px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 13px 28px;
+    background: #168cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #55b5ff;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 85px 8%;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-title span {
+    color: #39aaff;
+}
+
+.section-description {
+    text-align: center;
+    color: #9db1cc;
+    margin-bottom: 40px;
+}
+
+.about {
+    background: #081326;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #b8cbe2;
+}
+
+.services-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    padding: 30px;
+    background: #0b1a30;
+    border: 1px solid #19395d;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #36aaff;
+    box-shadow: 0 10px 35px #168cff20;
+}
+
+.symbol {
+    font-size: 32px;
+    color: #39aaff;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #a9bdd6;
+    font-size: 14px;
+}
+
+.projects {
+    background: #081326;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #b8cbe2;
+    margin: 12px 0 25px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #030812;
+    border-top: 1px solid #142b49;
+    color: #8299b5;
+    font-size: 13px;
+}
+
+footer strong {
+    color: #39aaff;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 80px 7%;
+    }
+
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <div class="logo-icon"><span>V</span></div>
+        VEXORA
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-tag">TECHNOLOGY • CREATIVITY • INNOVATION</div>
+
+    <h1>THINK <span>BEYOND.</span></h1>
+
+    <p>
+        Welcome to VEXORA — where technology,
+        creativity and innovation come together
+        to shape the digital future.
+    </p>
+
+    <a href="#services" class="btn">Explore Our World</a>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="section-title">About <span>VEXORA</span></h2>
+
+    <p>
+        VEXORA is a technology and creative brand
+        focused on exploring digital possibilities.
+        Our vision is to create modern digital
+        experiences through innovation, creativity
+        and technology.
+    </p>
+
+</section>
+
+<section id="services">
+
+    <h2 class="section-title">What We <span>Do</span></h2>
+
+    <p class="section-description">
+        Exploring ideas and building digital solutions.
+    </p>
+
+    <div class="services-grid">
+
+        <div class="card">
+            <div class="symbol">⌘</div>
+            <h3>Web Development</h3>
+            <p>
+                Modern, responsive and attractive
+                websites for the digital world.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="symbol">✦</div>
+            <h3>Graphic Design</h3>
+            <p>
+                Creative visual designs that
+                communicate ideas and identity.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="symbol">◈</div>
+            <h3>Technology Solutions</h3>
+            <p>
+                Exploring digital tools and
+                innovative technology concepts.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projects" id="projects">
+
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+
+    <p class="section-description">
+        A preview of the digital experiences
+        VEXORA aims to create.
+    </p>
+
+    <div class="projects-grid">
+
+        <div class="card">
+            <div class="symbol">01</div>
+            <h3>Digital Platform</h3>
+            <p>
+                A concept for a modern online experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="symbol">02</div>
+            <h3>Creative Studio</h3>
+            <p>
+                A concept exploring visual creativity and design.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="symbol">03</div>
+            <h3>Future Technology</h3>
+            <p>
+                A concept inspired by emerging digital ideas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Connect With <span>Us</span></h2>
+
+    <p>
+        Have an idea or want to learn more about VEXORA?
+        We'd love to hear from you.
+    </p>
+
+    <a class="btn"
+       href="mailto:vexora.official101@gmail.com">
+       Contact VEXORA
+    </a>
+
+    <p style="margin-top:20px;">
+        Email: vexora.official101@gmail.com
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+
+    © <span id="year"></span>
+    <strong>VEXORA</strong>. All rights reserved.
+
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
